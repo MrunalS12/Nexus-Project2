@@ -1,0 +1,54 @@
+
+
+/* Example of hover effect and transition */
+button:hover {
+    background-color: #45a049;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Example of fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#information {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    animation: fadeIn 1s ease;
+}
+
+#infoForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    margin-bottom: 0.5em;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #45a049;
+}
+
+input, button {
+    margin-bottom: 1em;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+input:focus, button:focus {
+    border-color: #45a049;
+    color: #45a049;
+}
+
+/* Add more interactive styles as needed */
